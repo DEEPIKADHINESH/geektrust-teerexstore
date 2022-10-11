@@ -1,0 +1,16 @@
+nav{
+    background-color: #F1F0F0;
+    margin-top: 20px;
+    padding: 20px;
+}
+.products{
+    display: inline-block;
+    width:200px;
+    height: 200px;
+   margin-left: 20px;
+   
+}
+.product{
+    height: 200px;
+    width:200px
+}
