@@ -9,8 +9,10 @@ function App() {
     <div >
     <CartProvider>
     <Switch>
+      
     <Route path="/product" component={Product}></Route>
     <Route path="/cart" component={Cart}></Route>
+    <Route path="/" component={Product}></Route>
   </Switch>
    
     </CartProvider>

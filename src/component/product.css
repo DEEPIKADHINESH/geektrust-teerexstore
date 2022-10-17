@@ -3,14 +3,15 @@ nav{
     margin-top: 20px;
     padding: 20px;
 }
-.products{
-    display: inline-block;
-    width:200px;
-    height: 200px;
-   margin-left: 20px;
-   
+.split{
+    display: flex;
+    
 }
-.product{
-    height: 200px;
-    width:200px
+.left{
+    width:20%
+}
+.right{
+    width:80%;
+    float: right;
+    margin-right: 30px;
 }

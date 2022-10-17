@@ -4,17 +4,17 @@ function Cart(){
     const {items,isEmpty,totalItems,totalUniqueItems,cartTotal,updateItemQuantity,removeItem,emptyCart}=useCart()
     if(isEmpty) return <h1>Your cart is empty</h1>
     return (
-       <section>
-        <div>
-           <div>
-            <h5>Cart:({totalUniqueItems}) totalItems:({totalItems})</h5>
-            <table className="table table-light table-hover m-0">
+       <section className="py-4 container ">
+        <div className="row justify-content-center" >
+           <div className="col-12 ">
+            <h5>Cart:({totalUniqueItems}) TotalItems:({totalItems})</h5>
+            <table className="table table-light table-hover m-0" >
                 <tbody>
                 {items.map((item)=>{
                     return(
                         <tr key={item.id}>
-                        <td>{item.price}</td>
-                       <td><img src={item.imageURL}></img></td>
+                        
+                       <td style={{height:"1rem"}}><img src={item.imageURL} ></img></td>
                        <td>{item.price}</td>
                        <td>Quantity:({item.quantity})</td>
                        <td>
